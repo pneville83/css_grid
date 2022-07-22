@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 10px;
+    display: grid;
+    gap: 10px;
+    width: 100vw;
+    height: 100vh;
+    grid-template:
+        "header" 8%
+        "menu" 8%
+        "hero" 25%
+        "main" 20%
+        "banner" 13%
+        "extra" 13%
+        "imagen" 13%;
+}
+
+.item-item1 {
+    background-color: rgb(12, 5, 51);
+    color: white;
+    grid-area: header; 
+}
+
+.item-item2 {
+    grid-area: menu;
+    background-color: rgb(212, 55, 81);
+    color: white;
+}
+
+.item-item3 {
+    grid-area: hero;
+    background-color: rgb(75, 75, 255);
+    color: white;
+}
+
+.item-item4 {
+    grid-area: main;
+    background-color: blue;
+    color: white;
+}
+
+.item-item5 {
+    grid-area: imagen;
+    background-color: rgb(170, 170, 233);
+    color: black;
+}
+
+.item-item6 {
+    grid-area: extra;
+    background-color: aqua;
+    color: black;
+}
+
+.item-item7 {
+    grid-area: banner;
+    background-color: rgb(230, 243, 108);
+    color: black;
+} 
+
+@media (min-width: 600px) {
+    .container {
+        grid-template: 
+        "header header header" 10%
+        "hero hero hero" 30%
+        "menu main main" 30%
+        "menu banner banner" 15%
+        "menu extra imagen" 15% /
+        20% 50% 30%; 
+    }
+}
+
+
+
+@media (min-width: 900px) {
+    .container {
+        grid-template: 
+        "header menu menu" 10%
+        "hero hero hero" 45%
+        "main main  imagen" 15%
+        "main main extra" 15%
+        "banner banner banner"15% /
+        20% 50% 30%;
+    }
+}
