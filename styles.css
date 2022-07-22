@@ -6,9 +6,10 @@
 .container {
     padding: 10px;
     display: grid;
+   
     gap: 10px;
-    width: 100vw;
-    height: 100vh;
+    width: 90vw;
+    height: 90vh;
     grid-template:
         "header" 8%
         "menu" 8%
@@ -23,42 +24,91 @@
     background-color: rgb(12, 5, 51);
     color: white;
     grid-area: header; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .item-item2 {
     grid-area: menu;
     background-color: rgb(212, 55, 81);
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .item-item3 {
     grid-area: hero;
     background-color: rgb(75, 75, 255);
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .item-item4 {
     grid-area: main;
     background-color: blue;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .item-item5 {
     grid-area: imagen;
     background-color: rgb(170, 170, 233);
     color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .item-item6 {
     grid-area: extra;
     background-color: aqua;
     color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .item-item7 {
     grid-area: banner;
     background-color: rgb(230, 243, 108);
     color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 } 
 
 @media (min-width: 600px) {
@@ -72,8 +122,6 @@
         20% 50% 30%; 
     }
 }
-
-
 
 @media (min-width: 900px) {
     .container {
